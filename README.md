@@ -51,6 +51,8 @@ Row names should represent gene names. Column names are of no importance.
 
 An example file (which may be used to reproduce the graphs shown on this page) is supplied as ``` thedata.rda ```
 
+**Warning! Please supply the data for statistically significant genes only, downstream of your favorite statistical testing! HypExpo is a downstream filter and NOT a substitute for statistical testing!** 
+
 The program operates in dual log-transformed space: both expression levels and fold changes are subject to preliminary log transformation within the script, internally. Please provide linear values as an input. 
 
 The script accepts positive values in both of the 2 columns since it was designed to be used a) in context of expression markers and b) with the "critical coefficients" [(Moskvin et. al., 2014)](http://www.tandfonline.com/doi/full/10.1080/21628130.2015.1010923) instead of fold changes; the latter are always positive. 
