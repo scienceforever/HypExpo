@@ -8,9 +8,9 @@
 
 ----
 ## Citing HypExpo
-If you use the HypExpo package, please cite:
+If you use the HypExpo, please cite:
 
-- Kumar A., D’Souza S.S., Moskvin O.V., Toh H., Guo L., Wang B., Zhang J., Swanson S., Thomson J., and Slukvin I.I. (2016) Mesenchymoangioblast is the Clonal Mesodermal Progenitors for Pericytes and Smooth Muscle Cells in Human Pluripotent Stem Cell Cultures (accepted)
+- Kumar A., D’Souza S.S., Moskvin O.V., Toh H., Guo L., Wang B., Zhang J., Swanson S., Thomson J., and Slukvin I.I. (2016) Mesenchymoangioblast is the Clonal Mesodermal Progenitors for Pericytes and Smooth Muscle Cells in Human Pluripotent Stem Cell Cultures
 
 
 
@@ -31,7 +31,7 @@ One may be interested in picking (out of the list of genes passed FDR + conventi
 
 ### The solution
 
-We present HypExpo, an adaptive filtering framework with 4 parameters that allow to construct filters of various shapes. The useabilty of particular shapes and parameter optimization issues may be explored by variety of approaches, including assessment of the resulting gene lists in context of functional categories, network patterns etc., and is open to the community for discussion. 
+We present HypExpo, a simple adaptive filtering framework with 4 parameters that allow to construct filters of various shapes. The useabilty of particular shapes and parameter optimization issues may be explored by variety of approaches, including assessment of the resulting gene lists in context of functional categories, network patterns etc., and is open to the community for discussion. 
 
 
 ## Using HypExpo 
