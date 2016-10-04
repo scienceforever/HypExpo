@@ -31,7 +31,7 @@ One may be interested in picking (out of the list of genes passed FDR + conventi
 
 ### The solution
 
-We present HypExpo, a simple adaptive filtering framework with 4 parameters that allow to construct filters of various shapes. The useabilty of particular shapes and parameter optimization issues may be explored by variety of approaches, including assessment of the resulting gene lists in context of functional categories, network patterns etc., and is open to the community for discussion. 
+We present HypExpo, a simple adaptive filtering framework with 5 parameters that allow to construct filters of various shapes. The useabilty of particular shapes and parameter optimization issues may be explored by variety of approaches, including assessment of the resulting gene lists in context of functional categories, network patterns etc., and is open to the community for discussion. 
 
 
 ## Using HypExpo 
@@ -86,6 +86,8 @@ When ``` preview.only ``` option is set to TRUE, only a preview graph within the
 ``` param.diag ``` is the slope of the linear component of the function 
 
 ``` param.shift ``` is a constant which is equivalent to y-intercept when the ``` param.hyp ``` is equal to zero. Setting all parameters other than this one to zero would result in a simple fold change filter.
+
+``` param.xshift ``` is a constant subtracted from the log-transformed expression values
 
 ``` baseName ``` is a no-space descriptive ID of the current selection procedure
 
