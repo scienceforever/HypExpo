@@ -27,6 +27,14 @@ curve(param.hyp / (x-param.xshift)^param.expo - param.diag * (x-param.xshift) + 
 plot(log10(df.sel[,2]) ~ log10(df.sel[,1]), pch=19, cex=0.5, col="grey", cex.lab=1.5, cex.axis=1.5, xlab="log10(expression)", ylab="log10(Rel. change)", main=c(paste(nGenes.selected, "Genes"), paste("Hyp_Expo_Diag_Shift", paramChain)), xlim=exprRange, ylim=foldRange)
 curve(param.hyp / (x-param.xshift)^param.expo - param.diag * (x-param.xshift) + param.shift, add=TRUE, col="green")
 dev.off() 
-out <- list(df, df.sel, rownames(df.sel))
+# 21 adaptive cutoff reference points:
+refPoints <- seq(0,6,by=0.3)
+# adaptive cutoff for the reference points:
+adaptCut <- 10^theCurve(10^refPoints)
+# setting relative change cutoff of 1M to improbable events
+adaptCut[is.na(adaptCut)] <- 10^6 
+adaptCut[adaptCut==Inf] <- 10^6
+milestones <- cbind(refPoints=round(10^refPoints,0),adaptCut)
+out <- list(df, df.sel, rownames(df.sel),milestones)
 out
 } }
