@@ -10,8 +10,7 @@
 ## Citing HypExpo
 If you use the HypExpo, please cite:
 
-- Kumar A., D’Souza S.S., Moskvin O.V., Toh H., Guo L., Wang B., Zhang J., Swanson S., Thomson J., and Slukvin I.I. (2016) Mesenchymoangioblast is the Clonal Mesodermal Progenitors for Pericytes and Smooth Muscle Cells in Human Pluripotent Stem Cell Cultures
-
+- Kumar A., D’Souza S.S., Moskvin O.V., Toh H., Wang B., Zhang J., Swanson S., Guo L., Thomson J., and Slukvin I.I. (2017) Specification and Diversification of Pericytes and Smooth Muscle Cells from Mesenchymoangioblasts. Cell Rep. 19(9):1902-1916.
 
 
 
